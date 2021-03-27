@@ -22,11 +22,11 @@ jobs:
           node-version: 14
 
       - name: Install
-        run: npm install
+        run: cd www && npm install
         working-directory: ./www
 
       - name: Build
-        run: npm run build
+        run: cd www && npm run build
         working-directory: ./www
 
       - name: Deploy
