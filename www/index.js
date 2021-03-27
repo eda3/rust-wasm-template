@@ -1,3 +1,2 @@
-import * as wasm from "wasm-game-of-life";
-
+import * as wasm from "rust_wasm_template"
 wasm.greet();
