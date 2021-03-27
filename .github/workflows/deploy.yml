@@ -23,11 +23,9 @@ jobs:
 
       - name: Install
         run: cd www && npm install
-        working-directory: ./www
 
       - name: Build
         run: cd www && npm run build
-        working-directory: ./www
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
