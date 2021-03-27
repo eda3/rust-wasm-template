@@ -22,8 +22,7 @@ jobs:
           node-version: 14
 
       - name: Install
-        run: npm install
-        working-directory: ./www
+        run: cd ./www && npm install
 
       - name: Build
         run: cd ./www && npm run build
