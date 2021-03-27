@@ -33,7 +33,7 @@ jobs:
         run: wasm-pack build
 
       - name: Build
-        run: cd ./www && npm run start
+        run: cd ./www && npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
