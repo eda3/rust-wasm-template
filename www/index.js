@@ -1,2 +1,2 @@
-import * as wasm from "rust_wasm_template"
+import * as wasm from "../pkg/rust_wasm_template"
 wasm.greet();
