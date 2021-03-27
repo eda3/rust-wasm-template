@@ -16,6 +16,10 @@ jobs:
           toolchain: stable
           target: wasm32-unknown-unknown
 
+      - uses: jetli/wasm-pack-action@v0.3.0
+        with:
+          version: latest
+
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -25,7 +29,8 @@ jobs:
         run: cd ./www && npm install
 
       - name: Build
-        run: cd ./www && npm run build
+#        run: cd ./www && npm run build
+        run: wasm-pack build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
